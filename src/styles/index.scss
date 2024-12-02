@@ -1,0 +1,38 @@
+@use "reset";
+@use "fonts";
+@use "colors";
+@use "mixins";
+
+:root {
+  --border-10: 10px;
+  --border-5: 5px;
+  --border-3: 3px;
+}
+
+body {
+  background-color: var(--clr-background);
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  color: var(--clr-txt-primary);
+
+  @include mixins.theme-transition();
+  @include mixins.scrollbar();
+}
+
+#root {
+  --padding: 1rem;
+  max-width: calc(var(--padding) * 2 + 950px);
+  margin: 0 auto;
+  padding: 0 var(--padding);
+  padding-top: 1.5rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}

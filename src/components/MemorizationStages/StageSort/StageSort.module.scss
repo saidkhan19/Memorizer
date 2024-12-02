@@ -1,0 +1,88 @@
+@use "../shared/stage";
+@use "../../../styles/mixins";
+
+.stage_container {
+  position: relative;
+  max-height: 530px;
+}
+
+.control_wrapper {
+  height: 65px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  padding: 15px;
+
+  p {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.text_content {
+  padding: 10px;
+
+  @include mixins.scrollbar();
+
+  white-space: pre-wrap;
+  font-weight: 250;
+  line-height: 1.2;
+}
+
+.reorder_element {
+  width: fit-content;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-left: 3px solid var(--clr-gray);
+  border-radius: var(--border-5);
+  background-color: var(--clr-blue-charcoal);
+  cursor: grab;
+  transition: background 0.3s ease-out;
+
+  &--wrong {
+    background-color: var(--clr-red-charcoal);
+    border-left: 3px solid var(--clr-red-dark);
+  }
+}
+
+.float_icon_button {
+  width: 45px;
+  aspect-ratio: 1;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  padding: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--clr-primary);
+  border: none;
+  border-radius: 50%;
+  color: var(--clr-gray);
+  cursor: pointer;
+  transition: background 0.3s ease-out;
+
+  &:hover {
+    background-color: var(--clr-blue-charcoal);
+  }
+}
+
+.score_text {
+  font-size: 14px;
+  color: var(--clr-gray);
+  letter-spacing: 1px;
+}
+
+.score_value {
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: 500;
+
+  &--low {
+    color: var(--clr-red-light);
+  }
+  &--high {
+    color: var(--clr-green-light);
+  }
+}

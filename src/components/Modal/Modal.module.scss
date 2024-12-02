@@ -1,0 +1,28 @@
+.modal {
+  background-color: var(--clr-background);
+  outline: none;
+  border: 1px solid var(--clr-ghost-25);
+  top: 20%;
+  border-radius: 6px;
+  padding: 1.5rem;
+  width: 30rem;
+  max-width: 90%;
+  z-index: 10;
+}
+
+.title {
+  margin-bottom: 1em;
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: var(--clr-txt-primary);
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.65);
+  z-index: 9;
+}

@@ -1,0 +1,51 @@
+@use "../../../styles/mixins";
+
+.container {
+  width: 60%;
+  margin-bottom: 50px;
+
+  @include mixins.media-md {
+    width: 100%;
+  }
+}
+
+.top_panel {
+  padding-left: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+
+  &__button {
+    @include mixins.theme-transition();
+
+    width: 108px;
+    height: 30px;
+    background-color: var(--clr-primary);
+    color: var(--clr-txt-primary);
+    font-weight: 300;
+    border-radius: var(--border-5);
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+  }
+}
+
+.fallback {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  color: var(--clr-gray);
+  font-size: 1.5rem;
+  font-weight: 300;
+
+  p {
+    max-width: 200px;
+  }
+}
+
+.mt {
+  margin-top: 1rem;
+}

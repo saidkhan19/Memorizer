@@ -1,0 +1,14 @@
+@use "../../styles/mixins";
+
+.container {
+  display: flex;
+
+  h2 {
+    font-weight: normal;
+    font-size: 1.25rem;
+  }
+
+  @include mixins.media-md {
+    flex-direction: column;
+  }
+}

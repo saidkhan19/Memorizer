@@ -1,0 +1,30 @@
+@use "../shared/stage";
+@use "../../../styles/mixins";
+
+.text_content {
+  max-height: 530px;
+  padding: 10px;
+
+  @include mixins.scrollbar();
+
+  p {
+    white-space: pre-wrap;
+    font-weight: 250;
+    line-height: 1.2;
+  }
+}
+
+.word {
+  &__invisible {
+    position: relative;
+  }
+
+  &__underline {
+    position: absolute;
+    height: 1px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--clr-gray);
+  }
+}

@@ -1,0 +1,23 @@
+.container {
+  p {
+    margin-top: 1.5rem;
+  }
+  a {
+    color: var(--clr-accent);
+  }
+}
+
+.icon_button {
+  padding: 3px 7px;
+  display: flex;
+  background-color: transparent;
+  color: var(--clr-gray);
+  border: none;
+  border-radius: var(--border-5);
+  cursor: pointer;
+  transition: background 0.3s ease-out;
+
+  &:hover {
+    background-color: var(--clr-ghost-5);
+  }
+}

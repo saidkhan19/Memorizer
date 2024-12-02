@@ -1,0 +1,50 @@
+body {
+  --clr-background: #fafafa;
+  --clr-primary: #e4e5f1;
+  --clr-secondary: #d2d3db;
+  --clr-accent: #484b6a;
+  --clr-ghost-50: rgba(0, 0, 0, 0.5);
+  --clr-ghost-25: rgba(0, 0, 0, 0.25);
+  --clr-ghost-15: rgba(0, 0, 0, 0.15);
+  --clr-ghost-5: rgba(0, 0, 0, 0.05);
+
+  --clr-txt-primary: #0f0f0f;
+
+  --clr-white: rgba(255, 255, 255, 1);
+  --clr-gray: #6b6c7e;
+  --clr-gray-dark: #7a7a85;
+  --clr-green-light: rgba(38, 146, 83, 1);
+  --clr-green-mint: rgba(55, 135, 107, 1);
+  --clr-green-mint-transparent: rgba(55, 135, 107, 0);
+  --clr-blue-charcoal: #a6a7b8;
+  --clr-red-light: #c32008;
+  --clr-red-dark: #8f0808;
+  --clr-red-charcoal: #b58a8a;
+
+  --clr-progress-background: #d2d3db;
+  --clr-progress-1: #a8d5ba;
+  --clr-progress-2: #66bb6a;
+  --clr-progress-3: #388e3c;
+
+  &[data-theme="dark"] {
+    --clr-background: #272934;
+    --clr-primary: #1f2129;
+    --clr-secondary: #17181e;
+    --clr-accent: #f57424;
+    --clr-ghost-50: rgba(255, 255, 255, 0.5);
+    --clr-ghost-25: rgba(255, 255, 255, 0.25);
+    --clr-ghost-15: rgba(255, 255, 255, 0.15);
+    --clr-ghost-5: rgba(255, 255, 255, 0.05);
+
+    --clr-txt-primary: #f5f5f5;
+
+    --clr-gray: #999999;
+    --clr-blue-charcoal: #363948;
+    --clr-red-charcoal: #6d2b2c;
+
+    --clr-progress-background: #363948;
+    --clr-progress-1: #66d855;
+    --clr-progress-2: #37876b;
+    --clr-progress-3: #176449;
+  }
+}

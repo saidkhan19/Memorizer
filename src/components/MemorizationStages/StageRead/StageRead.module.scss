@@ -1,0 +1,41 @@
+@use "../shared/stage";
+@use "../../../styles/mixins";
+
+.control_wrapper {
+  display: flex;
+  padding: 10px 15px;
+}
+
+.left_wrapper {
+  padding-right: 10px;
+  flex: 0 1 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.right_wrapper {
+  padding-left: 10px;
+  flex: 0 1 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.text_content {
+  max-height: 449px;
+  padding: 10px;
+
+  @include mixins.scrollbar();
+
+  p {
+    white-space: pre-wrap;
+    font-weight: 250;
+    line-height: 1.2;
+  }
+}
+
+.fallback_text {
+  font-style: italic;
+  font-size: 14px;
+  color: var(--clr-gray);
+  letter-spacing: 1px;
+}

@@ -1,0 +1,27 @@
+@use "../../styles/mixins";
+
+.header {
+  height: 57px;
+  padding-inline: 1.5rem;
+  background-color: var(--clr-primary);
+  border-radius: var(--border-10);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include mixins.theme-transition();
+
+  &__menu {
+    display: flex;
+    gap: 5px;
+
+    &_button {
+      padding: 10px;
+      color: var(--clr-txt-primary);
+      background-color: transparent;
+      font-weight: 300;
+      cursor: pointer;
+    }
+  }
+}

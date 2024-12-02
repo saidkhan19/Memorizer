@@ -1,0 +1,9 @@
+@use "./mixins";
+
+.main {
+  margin-top: 4.4rem;
+
+  @include mixins.media-sm {
+    margin-top: 2rem;
+  }
+}
