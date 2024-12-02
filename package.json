@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://saidkhan19.github.io/Memorizer/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

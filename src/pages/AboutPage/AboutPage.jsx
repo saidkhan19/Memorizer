@@ -23,7 +23,7 @@ export const AboutPage = ({ setPage }) => {
         </a>
         <br />
         Repository{" "}
-        <a href="" target="_blank">
+        <a href="https://github.com/saidkhan19/Memorizer" target="_blank">
           here
         </a>
         . Inspired by{" "}
